@@ -3,7 +3,9 @@
 .spago
 bower_components
 node_modules
+.next
 
 # Generated files
 .psci
 output
+package-lock.json
