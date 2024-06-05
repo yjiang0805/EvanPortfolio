@@ -5,9 +5,9 @@ import "@/app/globals.css";
 
 export default function Header() {
   return (
-    <header className="flex justify-between items-center mb-8 mt-8 ml-24 mr-24">
+    <header className="flex justify-between items-center mb-4 mt-4 ml-24 mr-24">
       <Link href="/">
-        <h1 className="text-6xl font-beaufort font-extrabold cursor-pointer">
+        <h1 className="text-6xl font-beaufort font-extrabold cursor-pointer transition duration-500 ease-in-out hover:bg-black hover:text-white p-4 rounded-xl">
           E. P. Lee
         </h1>
       </Link>
