@@ -8,7 +8,7 @@ export default function Home() {
     <div className="flex space-x-8 justify-center items-center">
       <HomeFolder
         props={{
-          url: "/assets/images/home page /deimos bouty room vertical.png",
+          url: "./assets/images/home page /deimos bouty room vertical.png",
           alt: "Digital",
           name: "Digital",
           link: "/digital",
@@ -16,7 +16,7 @@ export default function Home() {
       />
       <HomeFolder
         props={{
-          url: "/assets/images/home page /master chief vertical.png",
+          url: "./assets/images/home page /master chief vertical.png",
           alt: "Paintings",
           name: "Paintings",
           link: "/paintings",
@@ -24,7 +24,7 @@ export default function Home() {
       />
       <HomeFolder
         props={{
-          url: "/assets/images/home page /cyber punk street vertical.png",
+          url: "./assets/images/home page /cyber punk street vertical.png",
           alt: "Concepts",
           name: "Concepts",
           link: "/concepts",

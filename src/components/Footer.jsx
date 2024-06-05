@@ -12,7 +12,7 @@ export default function Footer() {
         rel="noreferrer"
         className="ml-2"
       >
-        <Image src="/instagram.svg" alt="Instagram" width={24} height={24} />
+        <Image src="./instagram.svg" alt="Instagram" width={24} height={24} />
       </a>
     </footer>
   );
