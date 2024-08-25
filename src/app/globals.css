@@ -17,3 +17,24 @@
   font-family: "Spiegel";
   src: url("../../public/assets/fonts/Spiegel-Regular.otf");
 }
+
+.embla {
+  overflow: hidden;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.embla__container {
+  display: flex;
+  height: 100%;
+}
+
+.embla__slide {
+  position: relative;
+  min-width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
