@@ -2,6 +2,7 @@
 .psci_modules
 .spago
 bower_components
+out
 node_modules
 .next
 
