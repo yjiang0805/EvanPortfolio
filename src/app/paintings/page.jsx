@@ -1,9 +1,22 @@
 import "@/app/globals.css";
 
+import Image from "next/image";
+import Masonry from "@mui/lab/Masonry";
+
+const imageSources = [
+  "/assets/images/paintings/painting1.png",
+  "/assets/images/paintings/painting2.jpg",
+  "/assets/images/paintings/painting3.jpg",
+  "/assets/images/paintings/painting4.png",
+  "/assets/images/paintings/painting5.jpg",
+];
+
 export default function Paintings() {
   return (
-    <div>
-      <h1>Paintings</h1>
-    </div>
+    <Masonry columns={3} spacing={1} sx={{ maxWidth: 1200, margin: "auto" }}>
+      {imageSources.map((src, index) => (
+        <Image key={index} src={src} alt="Painting" width={400} height={400} />
+      ))}
+    </Masonry>
   );
 }
