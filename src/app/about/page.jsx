@@ -1,13 +1,8 @@
-import Head from "next/head";
 import Image from "next/image";
 
 export default function About() {
   return (
     <div className="container mx-auto px-4 py-8">
-      <Head>
-        <title>About Me</title>
-        <meta name="description" content="Learn more about me" />
-      </Head>
       <h1 className="text-6xl font-bold mb-8 text-center font-beaufort">
         About Me
       </h1>

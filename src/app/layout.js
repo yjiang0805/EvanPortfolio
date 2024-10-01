@@ -3,8 +3,8 @@ import Header from "@/components/Header.jsx";
 import Footer from "@/components/Footer.jsx";
 
 export const metadata = {
-  title: "Evan Portfolio",
-  description: "Portfolio of Evan P Lee",
+  title: "E P Lee",
+  description: "Welcome to the portfolio of E P Lee",
 };
 
 export default function RootLayout({ children }) {
