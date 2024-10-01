@@ -17,11 +17,6 @@ export default function Header() {
             About
           </h2>
         </Link>
-        <Link href="/contact">
-          <h2 className="text-3xl font-beaufort font-bold cursor-pointer">
-            Contact Me
-          </h2>
-        </Link>
       </div>
     </header>
   );

@@ -22,7 +22,7 @@ export default function Carousel(props) {
       <h1 className="text-6xl font-beaufort font-extrabold text-center mt-8">
         {props.title}
       </h1>
-      <div className="embla">
+      <div className="embla mx-auto mt-12 max-w-4xl h-96">
         <div className="embla__viewport h-full" ref={emblaRef}>
           <div className="embla__container h-full">
             {props.imageSources.map((src, index) => (
@@ -33,13 +33,27 @@ export default function Carousel(props) {
                 <Image
                   src={src}
                   alt={props.title + " " + index}
-                  width={600}
-                  height={400}
-                  className="h-full"
+                  width={800}
+                  height={600}
+                  className="h-full w-full object-cover"
                 />
               </div>
             ))}
           </div>
+        </div>
+        <div className="flex justify-between mt-4">
+          <button
+            className="bg-black bg-opacity-50 text-white px-4 py-2"
+            onClick={scrollPrev}
+          >
+            Prev
+          </button>
+          <button
+            className="bg-black bg-opacity-50 text-white px-4 py-2"
+            onClick={scrollNext}
+          >
+            Next
+          </button>
         </div>
       </div>
     </div>

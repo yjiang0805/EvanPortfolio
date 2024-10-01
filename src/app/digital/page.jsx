@@ -8,7 +8,8 @@ const imageSources = [
   "/assets/images/digitals/digital2.png",
   "/assets/images/digitals/digital3.png",
   "/assets/images/digitals/digital4.png",
-"/assets/images/digitals/digital5.PNG"];
+  "/assets/images/digitals/digital5.PNG",
+];
 
 export default function Digital() {
   return (
