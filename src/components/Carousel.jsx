@@ -5,10 +5,9 @@ import React, { useCallback } from "react";
 import Image from "next/image";
 
 import useEmblaCarousel from "embla-carousel-react";
-import Autoplay from "embla-carousel-autoplay";
 
 export default function Carousel(props) {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()]);
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
 
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev();
@@ -22,9 +21,9 @@ export default function Carousel(props) {
       <h1 className="text-6xl font-beaufort font-extrabold text-center mt-8">
         {props.title}
       </h1>
-      <div className="embla mx-auto mt-12 max-w-4xl h-96">
-        <div className="embla__viewport h-full" ref={emblaRef}>
-          <div className="embla__container h-full">
+      <div className="embla mx-auto mt-12 max-w-5xl h-auto">
+        <div className="embla__viewport" ref={emblaRef}>
+          <div className="embla__container">
             {props.imageSources.map((src, index) => (
               <div
                 className="embla__slide flex items-center justify-center"
@@ -35,7 +34,7 @@ export default function Carousel(props) {
                   alt={props.title + " " + index}
                   width={800}
                   height={600}
-                  className="h-full w-full object-cover"
+                  className="object-contain"
                 />
               </div>
             ))}
