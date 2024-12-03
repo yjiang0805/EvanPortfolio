@@ -25,11 +25,22 @@ const collectionImageSources = [
     "/traditionaltodigital",
     "Traditional to Digital House",
   ],
+  [
+    "/assets/images/concepts/journey_reimagine/IMG_3322.PNG",
+    "/journeytooz",
+    "Journey to Oz Reimagine",
+  ],
+  [
+    "/assets/images/concepts/monster_hero/IMG_3522.PNG",
+    "/monsterhero",
+    "Monster V Hero",
+  ],
 ];
 
 const otherConceptsImageSources = [
   "/assets/images/concepts/IMG_2824.png",
   "/assets/images/concepts/IMG_2960.png",
+  "/assets/images/concepts/IMG_3093.PNG",
 ];
 
 export default function Concepts() {
@@ -41,7 +52,7 @@ export default function Concepts() {
       <Masonry columns={3} spacing={2} sx={{ maxWidth: 1200, margin: "auto" }}>
         {collectionImageSources.map((src, index) => (
           <Link href={"/concepts" + src[1]} key={index}>
-            <button className="relative rounded hover:scale-105 transition duration-500 ease-in-out">
+            <button className="relative rounded hover:scale-105 transition duration-500 ease-in-out w-128 h-128">
               <div className="absolute inset-0 bg-black opacity-0 hover:opacity-50 transition-opacity duration-500 ease-in-out"></div>
               <h1 className="text-4xl font-beaufort font-extrabold absolute inset-0 flex items-end p-4 text-white opacity-0 hover:opacity-100 transition-opacity duration-500 ease-in-out">
                 {src[2]}
