@@ -7,29 +7,56 @@ import Modal from "@/components/Modal";
 
 const imageSources = [
   {
-    name: "Digital 1",
+    name: "Shadow Isles",
     link: "/assets/images/digitals/digital1.png",
-    caption: "Caption for Digital 1",
+    caption:
+      "Free-hand Environment painting of the shadow isles from League of Legends | Summer 2024 | Done in procreate\n",
   },
   {
-    name: "Digital 2",
+    name: "Environment painting inspired by the dessert biomes",
     link: "/assets/images/digitals/digital2.png",
-    caption: "Caption for Digital 2",
+    caption:
+      "Environment painting inspired by the dessert biomes in The First Descendant | Summer 2024 | Done in procreate",
   },
   {
-    name: "Digital 3",
+    name: "Digital Painting of Splendid Staff Nami",
     link: "/assets/images/digitals/digital3.png",
-    caption: "Caption for Digital 3",
+    caption:
+      "Digital Painting of Splendid staff Nami done for MerMay | Summer 2024 | Done in procreate ",
   },
   {
-    name: "Digital 4",
+    name: "Environment painting of the Necralisk",
     link: "/assets/images/digitals/digital4.png",
-    caption: "Caption for Digital 4",
+    caption:
+      "Environment painting of the Necralisk from Warframe using the in-game Captura tool | Summer 2024 | Done in procreate",
   },
   {
-    name: "Digital 5",
+    name: "Environment painting inspired by the dessert biomes in The First Descendant",
     link: "/assets/images/digitals/digital5.PNG",
-    caption: "Caption for Digital 5",
+    caption:
+      "Environment painting inspired by the dessert biomes in The First Descendant | Summer 2024 | Done in procreate ",
+  },
+  {
+    name: "Environment painting of the plains of Eidolon",
+    link: "/assets/images/digitals/IMG_2950.jpeg",
+    caption:
+      "Environment painting of the plains of Eidolon from Warframe | Summer 2023 | Done in procreate",
+  },
+  {
+    name: "Environment painting of Mari Nui",
+    link: "/assets/images/digitals/IMG_2956.png",
+    caption:
+      "Environment painting of Mari Nui from Bionicle | Summer 2023 | Done in procreate",
+  },
+  {
+    name: "Digital 8",
+    link: "/assets/images/digitals/IMG_3266.PNG",
+    caption: "WIP",
+  },
+  {
+    name: "Keke Palmer Rouge",
+    link: "/assets/images/digitals/IMG_3358.PNG",
+    caption: "Keke Palmer Rouge fan-cast | Fall 2023 | Done in procreate",
   },
 ];
 
