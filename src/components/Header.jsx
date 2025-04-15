@@ -27,6 +27,11 @@ export default function Header() {
             Digitals
           </h2>
         </Link>
+        <Link href="/thesis">
+          <h2 className="text-3xl font-beaufort font-bold cursor-pointer transition duration-500 ease-in-out hover:bg-black hover:text-white p-4 rounded-xl">
+            Thesis
+          </h2>
+        </Link>
       </div>
       <div className="flex gap-8">
         <Link href="/about">
