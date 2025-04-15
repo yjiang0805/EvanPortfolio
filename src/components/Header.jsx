@@ -35,9 +35,9 @@ export default function Header() {
         } flex-col md:flex md:flex-row items-center gap-4 md:gap-8 mt-4 md:mt-0 w-full md:w-auto`}
       >
         <Link href="/" onClick={closeMenu}>
-          <h2 className="text-xl md:text-3xl font-beaufort font-bold cursor-pointer transition duration-500 ease-in-out hover:bg-black hover:text-white p-2 md:p-4 rounded-xl">
-            Home
-          </h2>
+          <h1 className="hidden md:block text-6xl font-beaufort font-extrabold cursor-pointer transition duration-500 ease-in-out hover:bg-black hover:text-white p-2 md:p-4 rounded-xl">
+            E. P. Lee
+          </h1>
         </Link>
         <Link href="/paintings" onClick={closeMenu}>
           <h2 className="text-xl md:text-3xl font-beaufort font-bold cursor-pointer transition duration-500 ease-in-out hover:bg-black hover:text-white p-2 md:p-4 rounded-xl">

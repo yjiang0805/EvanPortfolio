@@ -1,8 +1,12 @@
+"use client";
+
 import "@/app/globals.css";
 
 import Image from "next/image";
 import Link from "next/link";
 import Masonry from "@mui/lab/Masonry";
+import { useState } from "react";
+import Modal from "@/components/Modal";
 
 const collectionImageSources = [
   [
@@ -44,6 +48,22 @@ const otherConceptsImageSources = [
 ];
 
 export default function Concepts() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalImageSrc, setModalImageSrc] = useState("");
+  const [modalCaption, setModalCaption] = useState("");
+
+  const handleImageClick = (src, title) => {
+    setModalImageSrc(src);
+    setModalCaption(title);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setModalImageSrc("");
+    setModalCaption("");
+  };
+
   return (
     <div>
       <h1 className="text-center text-4xl md:text-5xl font-bold font-beaufort mt-4 mb-4">
@@ -81,20 +101,27 @@ export default function Concepts() {
         spacing={1}
         sx={{ maxWidth: 1200, margin: "auto" }}
       >
-        {otherConceptsImageSources.map((src, index) => (
+        {otherConceptsImageSources.map((item, index) => (
           <div
             key={index}
-            className="relative w-full max-w-[300px] h-[200px] md:max-w-[400px] md:h-[250px] overflow-hidden"
+            onClick={() => handleImageClick(item.src, item.title)}
+            className="relative w-full max-w-[300px] h-[200px] md:max-w-[400px] md:h-[250px] overflow-hidden cursor-pointer"
           >
             <Image
-              src={src}
-              alt={`Other Concept ${index + 1}`}
+              src={item.src}
+              alt={item.title}
               fill
               className="object-cover rounded"
             />
           </div>
         ))}
       </Masonry>
+      <Modal
+        isOpen={isModalOpen}
+        onClose={closeModal}
+        imageSrc={modalImageSrc}
+        caption={modalCaption}
+      />
     </div>
   );
 }
