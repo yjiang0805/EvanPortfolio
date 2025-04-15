@@ -5,7 +5,7 @@ import HomeFolder from "@/components/HomeFolder.jsx";
 
 export default function Home() {
   return (
-    <div className="flex space-x-8 justify-center items-center">
+    <div className="flex flex-col md:flex-row md:space-x-8 space-y-8 md:space-y-0 justify-center items-center">
       <HomeFolder
         props={{
           url: "/assets/images/home_page/deimos_bouty_room_vertical.png",

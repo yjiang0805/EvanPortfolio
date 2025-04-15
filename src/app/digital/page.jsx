@@ -78,19 +78,23 @@ export default function Digital() {
   };
 
   return (
-    <div>
-      <Masonry columns={3} spacing={1} sx={{ maxWidth: 1200, margin: "auto" }}>
+    <div className="px-4">
+      <Masonry
+        columns={{ xs: 1, sm: 2, md: 3 }}
+        spacing={2}
+        sx={{ maxWidth: 1200, margin: "auto" }}
+      >
         {imageSources.map((image, index) => (
           <div
             key={index}
             onClick={() => handleImageClick(image.link, image.caption)}
+            className="relative w-full max-w-[300px] h-[200px] md:max-w-[400px] md:h-[250px] overflow-hidden"
           >
             <Image
               src={image.link}
               alt={image.name}
-              width={400}
-              height={400}
-              className="cursor-pointer"
+              fill
+              className="cursor-pointer object-cover rounded-md"
             />
           </div>
         ))}

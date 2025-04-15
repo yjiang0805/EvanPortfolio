@@ -74,8 +74,12 @@ export default function Paintings() {
   };
 
   return (
-    <div>
-      <Masonry columns={3} spacing={1} sx={{ maxWidth: 1200, margin: "auto" }}>
+    <div className="px-4">
+      <Masonry
+        columns={{ xs: 1, sm: 2, md: 3 }}
+        spacing={2}
+        sx={{ maxWidth: 1200, margin: "auto" }}
+      >
         {imageSources.map((src, index) => (
           <div key={index} onClick={() => handleImageClick(src, index)}>
             <Image
@@ -83,7 +87,7 @@ export default function Paintings() {
               alt={`Painting ${index + 1}`}
               width={400}
               height={400}
-              className="cursor-pointer"
+              className="cursor-pointer rounded-md"
             />
           </div>
         ))}

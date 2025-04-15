@@ -46,15 +46,19 @@ const otherConceptsImageSources = [
 export default function Concepts() {
   return (
     <div>
-      <h1 className="text-center text-5xl font-bold font-beaufort mt-4 mb-4">
+      <h1 className="text-center text-4xl md:text-5xl font-bold font-beaufort mt-4 mb-4">
         Collections
       </h1>
-      <Masonry columns={3} spacing={2} sx={{ maxWidth: 1200, margin: "auto" }}>
+      <Masonry
+        columns={{ xs: 1, sm: 2, md: 3 }}
+        spacing={2}
+        sx={{ maxWidth: 1200, margin: "auto" }}
+      >
         {collectionImageSources.map((src, index) => (
           <Link href={"/concepts" + src[1]} key={index}>
-            <button className="relative rounded hover:scale-105 transition duration-500 ease-in-out w-96 h-64">
+            <button className="relative rounded hover:scale-105 transition duration-500 ease-in-out w-full max-w-[300px] h-[200px] md:max-w-[400px] md:h-[250px] overflow-hidden">
               <div className="absolute inset-0 bg-black opacity-0 hover:opacity-50 transition-opacity duration-500 ease-in-out z-10"></div>
-              <h1 className="text-4xl font-beaufort font-extrabold absolute inset-0 flex items-end p-4 text-white opacity-0 hover:opacity-100 transition-opacity duration-500 ease-in-out z-20">
+              <h1 className="text-xl md:text-2xl font-beaufort font-extrabold absolute inset-0 flex items-end p-4 text-white opacity-0 hover:opacity-100 transition-opacity duration-500 ease-in-out z-20">
                 {src[2]}
               </h1>
               <div className="relative w-full h-full">
@@ -69,17 +73,24 @@ export default function Concepts() {
           </Link>
         ))}
       </Masonry>
-      <h1 className="text-center text-5xl font-beaufort font-bold mt-4 mb-4">
+      <h1 className="text-center text-4xl md:text-5xl font-beaufort font-bold mt-4 mb-4">
         Other Concepts
       </h1>
-      <Masonry columns={3} spacing={1} sx={{ maxWidth: 1200, margin: "auto" }}>
+      <Masonry
+        columns={{ xs: 1, sm: 2, md: 3 }}
+        spacing={1}
+        sx={{ maxWidth: 1200, margin: "auto" }}
+      >
         {otherConceptsImageSources.map((src, index) => (
-          <div key={index} className="relative">
+          <div
+            key={index}
+            className="relative w-full max-w-[300px] h-[200px] md:max-w-[400px] md:h-[250px] overflow-hidden"
+          >
             <Image
               src={src}
               alt={`Other Concept ${index + 1}`}
-              width={400}
-              height={400}
+              fill
+              className="object-cover rounded"
             />
           </div>
         ))}
