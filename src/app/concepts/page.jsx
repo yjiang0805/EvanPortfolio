@@ -42,9 +42,24 @@ const collectionImageSources = [
 ];
 
 const otherConceptsImageSources = [
-  "/assets/images/concepts/IMG_2824.png",
-  "/assets/images/concepts/IMG_2960.png",
-  "/assets/images/concepts/IMG_3093.PNG",
+  {
+    src: "/assets/images/concepts/IMG_2824.png",
+    title: "Cyberpunk Shop Worker",
+    description:
+      "Cyberpunk sextoy shop worker | Concept art sheet for the character featured in the cyberpunk shop ",
+  },
+  {
+    src: "/assets/images/concepts/IMG_2960.png",
+    title: "Evelynn Costume",
+    description:
+      "Evelynn costume | Outfit exercise using Evelynn as the model | Summer 2024",
+  },
+  {
+    src: "/assets/images/concepts/IMG_3093.PNG",
+    title: "Myself in Valorant",
+    description:
+      "Myself in Valorant | Myself as a gorilla artist-themed agent in the Valorant universe, I did this in their style. ",
+  },
 ];
 
 export default function Concepts() {
@@ -52,9 +67,9 @@ export default function Concepts() {
   const [modalImageSrc, setModalImageSrc] = useState("");
   const [modalCaption, setModalCaption] = useState("");
 
-  const handleImageClick = (src, title) => {
+  const handleImageClick = (src, description) => {
     setModalImageSrc(src);
-    setModalCaption(title);
+    setModalCaption(description);
     setIsModalOpen(true);
   };
 
@@ -104,7 +119,7 @@ export default function Concepts() {
         {otherConceptsImageSources.map((item, index) => (
           <div
             key={index}
-            onClick={() => handleImageClick(item.src, item.title)}
+            onClick={() => handleImageClick(item.src, item.description)}
             className="relative w-full max-w-[300px] h-[200px] md:max-w-[400px] md:h-[250px] overflow-hidden cursor-pointer"
           >
             <Image
