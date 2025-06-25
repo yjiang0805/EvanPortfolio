@@ -14,7 +14,7 @@ const imageSources = [
   },
   {
     name: "Pedro Pascal",
-    link: "/assets/images/paintings/painting2.jpg",
+    link: "/assets/images/paintings/painting5.jpg",
     caption:
       "Celebrity portrait | An assignment in my oil class where we had to pick out a celebrity to paint and to make sure it shared a likeness to them. I went with Padro Pascal specifically a picture of him from the HBO adaptation of The Last of Us. Total time about 22 hours ",
   },
@@ -25,14 +25,8 @@ const imageSources = [
       "Oil from Life - male torso | 2 and a half-hour session from life | Spring 2024 | Oil on canvas paper",
   },
   {
-    name: "Marina in blue dress",
-    link: "/assets/images/paintings/painting4.png",
-    caption:
-      "Oil from life - Marina in blue dress | 7-hour session (3 separate sessions) | Spring 2024 | Oil on canvas paper",
-  },
-  {
     name: "Siesta key at night",
-    link: "/assets/images/paintings/painting5.jpg",
+    link: "/assets/images/paintings/painting4.png",
     caption:
       "Figure in an environment- Siesta key at night. | I decided to focus more on the environment compared to the figure to practice landscapes more for concept art. | 16 hours | Fall 2023 | Oil on canvas paper",
   },
@@ -43,16 +37,32 @@ const imageSources = [
       "Oil from Life - male head | 2 and a half-hour session from life | Fall  2024 | Oil on canvas paper",
   },
   {
-    name: "Female Head",
-    link: "/assets/images/paintings/IMG_0326.jpg",
-    caption:
-      "Oil from Life - female head | 2 and a half-hour session from life | Fall 2024 | Oil on canvas paper ",
-  },
-  {
     name: "Ripley",
     link: "/assets/images/paintings/IMG_0226.jpg",
     caption:
       "Oil from Life - Ripley | 2 and a half-hour session from life | Fall 2024 | Oil on canvas paper",
+  },
+  {
+    name: "Riven",
+    link: "/assets/images/paintings/riven_ionia.jpg",
+    caption:
+      "Riven | A painting of Riven from League of Legends in Ionia. | 20 hours | Fall 2024 | Oil on canvas paper",
+  },
+  {
+    name: "Riply",
+    link: "/assets/images/paintings/riply_portrait.jpg",
+    caption:
+      "Ripley | A portrait of Ripley from the Alien franchise. | 20 hours | Fall 2024 | Oil on canvas paper",
+  },
+  {
+    name: "Evelynn",
+    link: "/assets/images/paintings/eve_study.jpg",
+    caption: "WIP",
+  },
+  {
+    name: "bust",
+    link: "/assets/images/paintings/bust_urple.jpg",
+    caption: "Bust | A bust",
   },
 ];
 
@@ -81,13 +91,16 @@ export default function Paintings() {
         sx={{ maxWidth: 1200, margin: "auto" }}
       >
         {imageSources.map((src, index) => (
-          <div key={index} onClick={() => handleImageClick(src, index)}>
+          <div
+            key={index}
+            onClick={() => handleImageClick(src, index)}
+            className="relative w-full max-w-[300px] h-[200px] md:max-w-[400px] md:h-[250px] overflow-hidden"
+          >
             <Image
               src={src.link}
               alt={`Painting ${index + 1}`}
-              width={400}
-              height={400}
-              className="cursor-pointer rounded-md"
+              fill
+              className="cursor-pointer object-cover rounded-md"
             />
           </div>
         ))}

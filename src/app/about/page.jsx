@@ -19,7 +19,7 @@ export default function About() {
         <div className="w-full md:w-auto md:pl-4">
           <p className="text-lg mb-4 font-beaufort">
             Hello! I'm Evan Lee, a painter and concept artist from New Jersey. I
-            am enrolled in Ringling College of Art and Design and strive to work
+            graduated from Ringling College of Art and Design and strive to work
             in the gaming industry someday. When I'm away from the canvas you
             can find me cooking or playing online games with friends.
           </p>

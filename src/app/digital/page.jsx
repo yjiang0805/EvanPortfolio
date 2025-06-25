@@ -19,12 +19,6 @@ const imageSources = [
       "Environment painting inspired by the dessert biomes in The First Descendant | Summer 2024 | Done in procreate",
   },
   {
-    name: "Digital Painting of Splendid Staff Nami",
-    link: "/assets/images/digitals/digital3.png",
-    caption:
-      "Digital Painting of Splendid staff Nami done for MerMay | Summer 2024 | Done in procreate ",
-  },
-  {
     name: "Environment painting of the Necralisk",
     link: "/assets/images/digitals/digital4.png",
     caption:
@@ -57,6 +51,21 @@ const imageSources = [
     name: "Keke Palmer Rouge",
     link: "/assets/images/digitals/IMG_3358.PNG",
     caption: "Keke Palmer Rouge fan-cast | Fall 2023 | Done in procreate",
+  },
+  {
+    name: "Digital",
+    link: "/assets/images/digitals/luna_snow_study.jpg",
+    caption: "",
+  },
+  {
+    name: "Digital",
+    link: "/assets/images/digitals/px_1_copy_2.jpg",
+    caption: "",
+  },
+  {
+    name: "Digital",
+    link: "/assets/images/digitals/spacegoove_city.png",
+    caption: "",
   },
 ];
 
