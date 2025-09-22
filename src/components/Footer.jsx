@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <footer className="flex justify-center items-center h-16 text-black">
-      <p className="md:text-lg font-spiegel">Follow my socials:</p>
+      <p className="md:text-lg font-beaufort">Follow my socials:</p>
       <a
         href="https://www.instagram.com/evanpatlee_art"
         target="_blank"

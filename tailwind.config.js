@@ -21,7 +21,7 @@ module.exports = {
       },
       fontFamily: {
         beaufort: ["Beaufort for LOL", "sans-serif"],
-        spiegel: ["Spiegel", "sans-serif"],
+        playfair: ["Playfair Display", "sans-serif"],
       },
     },
   },
