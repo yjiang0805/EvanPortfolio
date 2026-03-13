@@ -26,10 +26,10 @@ export default function About() {
           <p className="text-lg font-beaufort">
             Feel free to reach out to me through my email at{" "}
             <a
-              href="mailto:evanplee@icloud.com"
+              href="mailto:evanpatlee@gmail.com"
               className="text-blue-500 underline"
             >
-              evanplee@icloud.com
+              evanpatlee@gmail.com
             </a>
           </p>
         </div>
